@@ -31,7 +31,7 @@ function initClient() {
         discoveryDocs: DISCOVERY_DOCS,
         scope: SCOPES,
         ux_mode: "redirect",
-        redirect_uri: "http://localhost:8000",
+        redirect_uri: "https://itsisaac19.github.io/Post/messages.html",
     }).then(
         function () {
             // Listen for sign-in state changes.
