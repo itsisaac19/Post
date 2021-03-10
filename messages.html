@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="messages.css">
+</head>
+<body>
+    <div class="header">
+        <div class="messagestext">
+            <div>Messages</div>
+            <div class="count">6</div>
+        </div>
+
+        <div class="filter">
+            <div onclick="signout()" class="filtertext">Unread</div>
+            <div class="arrow"><span class="material-icons">expand_more</span></div>
+        </div>
+    </div>
+
+    <div class="clientMessages">
+        <!--
+        <div class="message">
+            <div class="innermessage">
+                <h1>TeamSnap</h1>
+                <p>One year with COVID-19: five 
+                    sports-themed silver linings…
+                </p>
+
+                <div class="date">3.03.2021</div>
+
+                <div class="labels">
+                    <div class="label important">IMPORTANT</div>
+                    <div class="label dev">DEV</div>
+                </div>
+
+                <div class="tools">
+                    <span class="material-icons">reply</span>
+                    <span class="material-icons">archive</span>
+                    <span class="material-icons">delete</span>
+                </div>
+            </div>
+        </div>
+        <div class="message"></div>
+        -->
+    </div>
+
+    <div class="loader">
+        <div class="spinner"></div>
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="messages.js"></script>
+<script src="gmail.js"></script>
+<script async defer src="https://apis.google.com/js/api.js"
+onload="this.onload=function(){};handleClientLoad()"
+onreadystatechange="if (this.readyState === 'complete') this.onload()">
+</script>
+</html>
