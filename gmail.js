@@ -49,7 +49,7 @@ function updateSigninStatus(isSignedIn) {
       listLabels();
     } else {
         if (localStorage.getItem('client') && localStorage.getItem('client') == 'google') {
-            if (localStorage.setItem('countOfLoopSign')) {
+            if (localStorage.getItem('countOfLoopSign')) {
                 document.querySelector('.messagestext').innerHTML = 'Looping.' + "Status: " + isSignedIn
                 return;
             }
