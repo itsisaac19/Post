@@ -48,13 +48,9 @@ function updateSigninStatus(isSignedIn) {
     if (isSignedIn) {
       listLabels();
     } else {
+        alert('Failed to sign in try again by clicking the messages text.')
         if (localStorage.getItem('client') && localStorage.getItem('client') == 'google') {
-            if (localStorage.getItem('countOfLoopSign')) {
-                document.querySelector('.messagestext').innerHTML = 'Looping.' + "Status: " + isSignedIn
-                return;
-            }
-            localStorage.setItem('countOfLoopSign', 1)
-            authGoogle()
+
         } else {
             window.location.href = 'index.html'
         }
