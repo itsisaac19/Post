@@ -44,11 +44,18 @@ function initClient() {
       );
 }
 
+var countOfLoopSign;
+
 function updateSigninStatus(isSignedIn) {
     if (isSignedIn) {
       listLabels();
     } else {
         if (localStorage.getItem('client') && localStorage.getItem('client') == 'google') {
+            if (countOfLoopSign == 1) {
+                document.querySelector('.messagestext').innerHTML = 'Looping.' + "Status: " + isSignedIn
+                return;
+            }
+            countOfLoopSign = 1
             authGoogle()
         } else {
             window.location.href = 'index.html'
