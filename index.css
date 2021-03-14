@@ -1,0 +1,67 @@
+/*f
+font-family: orpheuspro, serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: orpheuspro, serif;
+font-weight: 400;
+font-style: italic;
+
+font-family: sofia-pro, sans-serif;
+font-weight: 500;
+font-style: italic;
+*/
+
+body {
+    background-color: #F4F4F4;
+}
+
+.maincontent {
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    right: 40px;
+
+    height: min-content;
+}
+.innergrid {
+    margin: 0 100px 0 50px;
+    height: min-content;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 770px);
+    column-gap: 50px;
+}
+.innergrid img {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+}
+.italic {
+    font-style: italic;
+}
+.underline {
+    text-decoration: underline 1px;
+}
+.lighter {
+    color: #B2B2B2;
+}
+.darker {
+    color: #4E4E4E;
+}
+.sectioncontent {
+    margin: 100px 0 50px 100px;
+}
+.sectioncontent h1 {
+    color: #4A4A4A;
+    font-family: orpheuspro, serif;
+    font-size: 60px;
+    font-weight: 500;
+}
+.sectioncontent p {
+    color: #8D8D8D;
+    font-family: sofia-pro, sans-serif;
+    font-size: 19px; line-height: 37px;
+    font-weight: 400;
+}
