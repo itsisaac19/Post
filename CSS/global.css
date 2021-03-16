@@ -1,17 +1,45 @@
 html {
     scroll-behavior: smooth;
 }
+body {
+    background-color: #F4F4F4;
+}
+
+@keyframes slideup {
+    from {
+        top: 55px;
+        opacity: 0;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+        /*animation: slideup 0.3s ease delay 1 forwards;*/
+    }
+}
+
 .navouter {
     position: absolute;
     left: 20px;
     top: 30px;
     right: 40px;
 
-    height: 80px;
+    height: 65px;
 
     display: grid;
     grid-template-columns: 120px 3fr repeat(6, 1fr);
     grid-auto-flow: column;
+
+    transition: 0.4s ease;
+}
+.navfloat {
+    position: fixed;
+    top: 20px;
+
+    box-shadow: 0px 3px 43px rgba(0, 0, 0, 0.055);
+    background-color: white;
+    border-radius: 30px;
+
+    z-index: 10;
 }
 .navouter span {
     cursor: pointer;
@@ -25,7 +53,7 @@ html {
 .navouter > span:not(:first-of-type) {
     color: #9F9F9F;
     font-family: sofia-pro, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 .navouter > span:not(:first-of-type):hover {
     color: #6b6b6b;
@@ -36,7 +64,7 @@ html {
 
 .globalbottom {
     margin: auto;
-    height: 400px;
+    height: 450px;
     width: 600px;
 }
 .globalbottom h1 {
@@ -88,4 +116,17 @@ html {
     color: #b1b1b1;
     font-size: 15px;
     margin: 21px 65px auto auto;
+}
+
+.italic {
+    font-style: italic;
+}
+.underline {
+    text-decoration: underline 1px;
+}
+.lighter {
+    color: #B2B2B2;
+}
+.darker {
+    color: #464646;
 }

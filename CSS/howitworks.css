@@ -1,21 +1,3 @@
-/*f
-font-family: orpheuspro, serif;
-font-weight: 400;
-font-style: normal;
-
-font-family: orpheuspro, serif;
-font-weight: 400;
-font-style: italic;
-
-font-family: sofia-pro, sans-serif;
-font-weight: 500;
-font-style: italic;
-*/
-
-body {
-    background-color: #F4F4F4;
-}
-
 .maincontent {
     position: absolute;
     top: 180px;
@@ -30,28 +12,24 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 770px);
+    grid-template-rows: repeat(3, min-content);
     column-gap: 50px;
 }
 .innergrid img {
+    position: relative; opacity: 0; top: 15px;
     margin: auto;
     width: 100%;
     max-width: 800px;
 }
-.italic {
-    font-style: italic;
+.phone:last-of-type{
+    margin: 100px auto;
 }
-.underline {
-    text-decoration: underline 1px;
+.phone:first-of-type {
+    animation: slideup 0.7s ease 0.3s 1 forwards;
 }
-.lighter {
-    color: #B2B2B2;
-}
-.darker {
-    color: #4E4E4E;
-}
+
 .sectioncontent {
-    margin: 100px 0 50px 100px;
+    margin: 50px 0 50px 100px;
 }
 .sectioncontent h1 {
     color: #4A4A4A;
@@ -64,4 +42,13 @@ body {
     font-family: sofia-pro, sans-serif;
     font-size: 19px; line-height: 37px;
     font-weight: 400;
+}
+.sectioncontent li {
+    color: #4E4E4E;
+    font-family: sofia-pro, sans-serif;
+    font-size: 19px; line-height: 37px;
+    font-weight: 400;
+}
+.sectioncontent hr {
+    border: #d4d4d4 1px solid;
 }

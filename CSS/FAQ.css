@@ -1,0 +1,42 @@
+.maincontent {
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    right: 40px;
+
+    height: min-content;
+}
+.innergrid {
+    margin: 0 100px 0 50px;
+    height: min-content;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 50px;
+}
+
+.sectioncontent {
+    margin: 0px 0 50px 100px;
+}
+.sectioncontent h1 {
+    color: #4A4A4A;
+    font-family: orpheuspro, serif;
+    font-size: 65px;
+    font-weight: 500;
+}
+.sectioncontent p {
+    color: #8D8D8D;
+    font-family: sofia-pro, sans-serif;
+    font-size: 18px; line-height: 34px;
+    font-weight: 400;
+}
+.sectioncontent li {
+    color: #4E4E4E;
+    font-family: sofia-pro, sans-serif;
+    font-size: 19px; line-height: 37px;
+    font-weight: 400;
+}
+.sectioncontent hr {
+    border: #d4d4d4 1px solid;
+}
