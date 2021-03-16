@@ -1,0 +1,131 @@
+.maincontent {
+    position: absolute;
+    top: 180px;
+    left: 70px;
+    right: 40px;
+
+    height: min-content;
+}
+.innergrid {
+    margin: 0 100px 0 0px;
+    height: min-content;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 50px;
+}
+
+.sectioncontent {
+    margin: 0px 0 50px 0px;
+}
+.sectioncontent h1 {
+    color: #4A4A4A;
+    font-family: orpheuspro, serif;
+    font-size: 65px;
+    font-weight: 500;
+}
+.sectioncontent h1:first-of-type {
+    margin-block-end: 15px;
+}
+.sectioncontent hr {
+    border: 1px solid rgb(170, 170, 170);
+}
+.sectioncontent hr:nth-child(2) {
+    margin-left: 0;
+    margin-top: 0;
+    width: 340px;
+}
+.sectioncontent hr:nth-child(3) {
+    margin-top: 13px;
+    margin-left: 70px;
+    width: 340px;
+}
+.sectioncontent hr:nth-child(4) {
+    margin-top: 13px;
+    margin-left: 0px;
+    width: 340px;
+}
+.mainarticle {
+    position: relative;
+    margin-left: 0px;
+    margin-right: 50px;
+    margin-top: 40px;
+    background-color: rgb(233, 233, 233);
+    height: 340px;
+    width: auto;
+}
+.articletitle {
+    position: absolute;
+    color: #3a3a3a;
+
+    font-family: orpheuspro, serif;
+    font-size: 65px;
+    font-weight: 500;
+
+    left: -25px;
+    bottom: -45px;
+}
+.sidearticles {
+    margin: 40px 0 0 150px;
+}
+.spacer {
+    width: 100px;
+    height: 350px;
+}
+.sidearticletitle:hover {
+    color: rgb(61, 61, 61);
+}
+.sidearticletitle {
+    cursor: pointer;
+    transition: 0.2s ease;
+    color: #797979;
+    font-family: orpheuspro, serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+.sideinfo span:first-of-type {
+    color: #A7A7A7;
+    font-family: sofia-pro, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.sideinfo span:last-of-type {
+    color: #292929;
+    font-family: sofia-pro, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+.info {
+    position: absolute;
+
+    font-family: sofia-pro, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+
+    right: -50px;
+    top: 20%;
+}
+.split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.date {
+    color: #A7A7A7;
+}
+.author {
+    color: #292929;
+}
+
+.sectioncontent p {
+    color: #8D8D8D;
+    font-family: sofia-pro, sans-serif;
+    font-size: 18px; line-height: 34px;
+    font-weight: 400;
+}
+.sectioncontent li {
+    color: #4E4E4E;
+    font-family: sofia-pro, sans-serif;
+    font-size: 19px; line-height: 37px;
+    font-weight: 400;
+}

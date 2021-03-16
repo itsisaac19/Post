@@ -13,13 +13,3 @@ function navFloat () {
     }
 }
 
-Array.prototype.forEach.call(document.querySelector('.navouter').children, function(el) {
-    el.addEventListener('click', function() {
-        if (this.innerHTML == "Post") {
-            window.location.href = 'index.html'
-            return;
-        }
-        var link = this.innerHTML.replace(/\s/g,'-')
-        window.location.href = link + '.html'
-    })
-}) 

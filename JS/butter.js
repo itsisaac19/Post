@@ -116,3 +116,19 @@
     root.butter = new Butter();
 
 })(this);
+
+
+Array.prototype.forEach.call(document.querySelector('.navouter').children, function(el) {
+    el.addEventListener('click', function() {
+        if (this.innerHTML == "Post") {
+            window.location.href = 'index.html'
+            return;
+        }
+        if (this.innerHTML == "Get started") {
+            window.location.href = 'How-it-works.html'
+            return;
+        }
+        var link = this.innerHTML.replace(/\s/g,'-')
+        window.location.href = link + '.html'
+    })
+}) 
